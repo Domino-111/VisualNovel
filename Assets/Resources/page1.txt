@@ -1,0 +1,6 @@
+You turn left. 
+
+The long corridor comes to an abrupt stop, there's a door ahead of you.
+
+You need a key for the door.
+~goto|0|Go Back_goto|3|Unlock Door
