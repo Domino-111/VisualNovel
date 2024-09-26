@@ -35,13 +35,24 @@ public class ButtonEvent : MonoBehaviour
         switch (action)
         {
             case "goto":
-                int pageNumber = int.Parse(key);
+                int pageNumber;
+                if (key == "back")
+                {
+                    pageNumber = pageManager.previousPage;
+                }
+                else
+                {
+                    pageNumber = int.Parse(key);
+                }
                 pageManager.LoadPage(pageNumber);
                 break;
 
             case "collect":
                 Item item = Enum.Parse<Item>(key);
                 pageManager.inventory.Collect(item);
+
+                pageManager.LoadPage(key);
+
                 break;
 
             default:

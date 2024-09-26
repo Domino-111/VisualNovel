@@ -2,5 +2,5 @@ You turn right.
 
 There's a dark room at the end of the hallway.
 
-You could go into the dark room, or go back.
-~goto|0|Go Back_goto|4|Enter the Room
+hasNot:FirstLevelKey??There's a key card on the desk in the room.
+~goto|0|Turn Around_hasNot:FirstLevelKey??collect|FirstLevelKey|Take Key Card
