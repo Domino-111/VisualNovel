@@ -4,4 +4,4 @@ You walk down the grey corridors, ears perked, eyes scanning.
 
 You can go left, or right.
 
-~goto|1|Go Left_goto|2|Go Right
+~goto|1|Go Left_goto|2|Go Right~bgForest

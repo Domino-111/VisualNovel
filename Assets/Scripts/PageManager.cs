@@ -25,6 +25,9 @@ public class PageManager : MonoBehaviour
     //Create an instance of our inventory to track our items
     public Inventory inventory = new Inventory();
 
+    //This is the image component for the background NOT the background graphic itself
+    public Image backgroundImage;
+
     void Start()
     {
         //Load the first page
@@ -35,7 +38,7 @@ public class PageManager : MonoBehaviour
     {
         //Remember what page we were just on
         previousPage = currentPage;
-        
+
         //Update to the page we're on now
         currentPage = pageNumber;
 
@@ -60,7 +63,7 @@ public class PageManager : MonoBehaviour
     {
         //string.Split() will seperate a string into an array, using the provided character
         string[] unpackedPage = pageContents.Split('~');
-        //Here, unpackedPage[0] is the display text and unpackedPage[1] is our button info
+        //Here, unpackedPage[0] is the display text and unpackedPage[1] is our button info. unpackedPage[2] is our background name
 
         //Check if our page has any conditional text
         if (unpackedPage[0].Contains("??"))
@@ -76,6 +79,19 @@ public class PageManager : MonoBehaviour
 
         //Pass those buttons into our function
         SetButtons(buttons);
+
+        //If we have a background mentioned in the page...
+        if (unpackedPage.Length > 2)
+        {
+            //Load that background
+            LoadBackground(unpackedPage[2]);
+        }
+        
+        else
+        {
+            //This will "fail" and so load a blank square
+            LoadBackground("");
+        }
     }
 
     private string RewritePage(string pageContents)
@@ -85,7 +101,7 @@ public class PageManager : MonoBehaviour
 
         string rewrittenString = "";
 
-        for (int i = 0; i < pageLines.Length; i ++)
+        for (int i = 0; i < pageLines.Length; i++)
         {
             //If the current line is empty, skip it
             if (pageLines[i] == "")
@@ -125,7 +141,7 @@ public class PageManager : MonoBehaviour
     private void SetButtons(string[] buttonInfo)
     {
         //For as long as 'i' (starts at 0) is less than the number of child objects in buttonPanel
-        for (int i = 0; i < buttonPanel.childCount; i ++)
+        for (int i = 0; i < buttonPanel.childCount; i++)
         {
             //Destroy the child gameobject
             Destroy(buttonPanel.GetChild(i).gameObject);
@@ -183,5 +199,26 @@ public class PageManager : MonoBehaviour
 
         Debug.LogWarning($"Tried to check {conditionSplit[0]} which is not a vaild condition");
         return true;
+    }
+
+    private void LoadBackground(string bgName)
+    {
+        //Try to load the sprite from Resources/Backgrounds/file
+        Sprite sprite = Resources.Load<Sprite>("Backgrounds/" + bgName);
+        //If we managed to load the sprite...
+        if (sprite)
+        {
+            //apply the sprite to the image
+            backgroundImage.sprite = sprite;
+            backgroundImage.color = Color.white;
+        }
+
+        else
+        {
+            //Remove the current sprite (we will be left with a plain square)
+            backgroundImage.sprite = null;
+            //Set the colour to black/grey
+            backgroundImage.color = Color.black;
+        }
     }
 }
