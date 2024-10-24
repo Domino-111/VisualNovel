@@ -1,4 +1,0 @@
-You took the keycard.
-
-It grants access to the first level.
-~goto|back|Continue

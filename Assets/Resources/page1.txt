@@ -1,6 +1,7 @@
-You turn left. 
+You head north and come across a little trail. 
 
-The long corridor comes to an abrupt stop, there's a door ahead of you.
+Following the trail you begin to hear a rustling ahead and in a flash a goblin jumps out in front.
 
-You need a key for the door.
-~goto|0|Go Back_goto|3|Unlock Door
+The goblin is brandishing a knife and you fear you can't get past without a fight.
+
+~goto|0|Head Back down the Trail_goto|3|Fight without a weapon_goto|4|Fight with your sword

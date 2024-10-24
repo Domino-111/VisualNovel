@@ -1,7 +1,9 @@
-The space station is cold and quiet, as usual.
+You're an adventurer tasked with recovering a special seeing stone for an eccentric wizard.
 
-You walk down the grey corridors, ears perked, eyes scanning.
+While travelling through the old forest you trip down a hill and get separated from your companions.
 
-You can go left, or right.
+Picking yourself up you discover your equipment was scattered and are now lost in the forest.
 
-~goto|1|Go Left_goto|2|Go Right~bgForest
+You can go North, or East.
+
+~goto|1|Go North_goto|2|Go East~bgForest

@@ -4,11 +4,9 @@ using UnityEngine;
 
 public enum Item
 {
-    FirstLevelKey,
-    SecondLevelKey,
-    Flamethrower,
-    Spacesuit,
-    LaserGun,
+    Sword,
+    ChestKey,
+    HealthPotion,
 }
 
 public class Inventory
