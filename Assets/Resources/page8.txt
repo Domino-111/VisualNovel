@@ -1,0 +1,9 @@
+Charging the undead creature with sword in hand your epic clash begins.
+
+Blows are shared but unfortunately you were still weakened from the fight with the goblin.
+
+You were able to defeat the skeleton but not without great cost.
+
+Succumbing to your wounds you fall to the ground and look to the sky wondering if you could have made a better choice.
+
+~goto|0|Begin your journey anew~bgStoneCircle

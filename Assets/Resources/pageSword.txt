@@ -1,4 +1,4 @@
 You pick up your blade returning it to your sheath.
 
 You can continue your journey with a greater degree of safety now.
-~goto|back|Continue
+~goto|back|Continue~bgForestSword

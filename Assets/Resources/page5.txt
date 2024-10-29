@@ -1,0 +1,5 @@
+Continuing down the trail the forest begins to get a bit clearer and you happen yourself upon an abandoned shack.
+
+There could potentially be supplies in there but with the state it's in it seems unlikely.
+
+~goto|6|Continue down the trail_has:ChestKey??goto|7|Enter the shack_hasNot:ChestKey??goto|10|Enter the shack_goto|4|Head back down the trail~bgShack

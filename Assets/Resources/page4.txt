@@ -1,0 +1,7 @@
+Unsheathing your sword you prepare for battle.
+
+You both charge the other and lock blades until you're able to overpower the goblin and slash its chest. 
+
+You aren't unscathed and took some cuts yourself.
+
+~goto|5|Continue down the trail_hasNot:ChestKey??collect|ChestKey|Loot the Goblin~bgGoblin

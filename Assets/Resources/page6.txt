@@ -1,0 +1,7 @@
+You find the end of the trail and discover an ancient stone shrine.
+
+Getting closer you spot the seeing stone you're after inside an ornate stone pillar in the center of the shrine.
+
+Taking a step closer you're suddenly attacked by a skeleton wielding an axe.
+
+~has:HealthPotion??goto|9|Fight with your sword_hasNot:HealthPotion??goto|8|Fight with your sword_goto|5|Head back down the trail~bgStoneCircle

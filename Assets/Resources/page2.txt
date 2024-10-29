@@ -1,7 +1,7 @@
 You head east and break through some tough brush.
 
-Once pushing past you make it to a clearing and a shiny glint catches your eye.
+Once pushing past you make it to a clearing.
 
-hasNot:Sword??There's your sword laying on the ground in front of you.
+hasNot:Sword??A shiny glint catches your eye. There's your sword laying on the ground in front of you.
 
 ~goto|0|Turn Around_hasNot:Sword??collect|Sword|Pick up your sword~bgForestSword

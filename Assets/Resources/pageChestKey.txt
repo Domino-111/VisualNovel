@@ -1,0 +1,5 @@
+You search the goblin's body and besides the knife only find a key.
+
+It looks like it belongs to a chest of some kind.
+
+~goto|back|Continue

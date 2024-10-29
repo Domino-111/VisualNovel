@@ -1,0 +1,7 @@
+Entering the shack you come to a sight of rubble and disrepair.
+
+In the center of the room however is a pristine looking chest.
+
+You don't have anything to unlock it so can't open it.
+
+~goto|5|Leave the shack~bgShack

@@ -1,0 +1,5 @@
+Entering the shack you come to a sight of rubble and disrepair.
+
+hasNot:HealthPotion??In the center of the room however is a pristine looking chest.
+
+~hasNot:HealthPotion??collect|HealthPotion|Unlock the chest_goto|5|Leave the shack~bgShack

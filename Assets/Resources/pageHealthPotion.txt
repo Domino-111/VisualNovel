@@ -1,0 +1,7 @@
+Inserting the goblin's key into the lock fits perfectly and turning it has a satisfying click.
+
+Opening the chest you see a health potion inside that will help heal your wounds.
+
+Drinking it you feel invigorated and healthy once again.
+
+~goto|back|Continue
