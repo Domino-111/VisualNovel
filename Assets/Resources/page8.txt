@@ -6,4 +6,4 @@ You were able to defeat the skeleton but not without great cost.
 
 Succumbing to your wounds you fall to the ground and look to the sky wondering if you could have made a better choice.
 
-~goto|0|Begin your journey anew~bgStoneCircle
+~goto|11|Begin anew~bgStoneCircle

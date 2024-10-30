@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Linq;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PageManager : MonoBehaviour
 {
@@ -14,7 +16,7 @@ public class PageManager : MonoBehaviour
     public int previousPage;
 
     //Text which displays the current page
-    public Text pageDisplay;
+    public TextMeshProUGUI pageDisplay;
 
     //The transform to parent our buttons onto
     public Transform buttonPanel;
@@ -36,6 +38,11 @@ public class PageManager : MonoBehaviour
 
     public void LoadPage(int pageNumber)
     {
+        if (pageNumber == 11)
+        {
+            SceneManager.LoadScene(0);
+        }
+
         //Remember what page we were just on
         previousPage = currentPage;
 
@@ -86,7 +93,7 @@ public class PageManager : MonoBehaviour
             //Load that background
             LoadBackground(unpackedPage[2]);
         }
-        
+
         else
         {
             //This will "fail" and so load a blank square

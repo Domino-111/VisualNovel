@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 public class ButtonEvent : MonoBehaviour
 {
     //What the button will display to the user
-    public Text buttonDisplayText;
+    public TextMeshProUGUI buttonDisplayText;
 
     //So we can change pages on click
     public PageManager pageManager;
@@ -26,7 +27,7 @@ public class ButtonEvent : MonoBehaviour
         this.key = key;
         this.pageManager = pageManager;
 
-        buttonDisplayText = GetComponentInChildren<Text>();
+        buttonDisplayText = GetComponentInChildren<TextMeshProUGUI>();
         buttonDisplayText.text = label;
     }
 

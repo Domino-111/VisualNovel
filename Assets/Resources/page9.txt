@@ -6,4 +6,4 @@ With seeing stone in hand you're able to complete the quest for the wizard and r
 
 The End.
 
-~||The End
+~goto|11|Begin anew

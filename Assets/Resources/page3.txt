@@ -2,4 +2,4 @@ You charge the goblin with all your courage but unfortunately the goblin is too 
 
 You fall back and look to the sky wondering if you could have made a better choice.
 
-~goto|0|Begin your journey anew~bgGoblin
+~goto|11|Begin anew~bgGoblin

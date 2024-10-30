@@ -4,4 +4,4 @@ Getting closer you spot the seeing stone you're after inside an ornate stone pil
 
 Taking a step closer you're suddenly attacked by a skeleton wielding an axe.
 
-~has:HealthPotion??goto|9|Fight with your sword_hasNot:HealthPotion??goto|8|Fight with your sword_goto|5|Head back down the trail~bgStoneCircle
+~has:HealthPotion??goto|9|Fight with your sword_hasNot:HealthPotion??goto|8|Fight with your sword_goto|5|Turn around~bgStoneCircle

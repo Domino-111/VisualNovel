@@ -4,4 +4,4 @@ Following the trail you begin to hear a rustling ahead and in a flash a goblin j
 
 The goblin is brandishing a knife and you fear you can't get past without a fight.
 
-~goto|0|Head back down the trail_goto|3|Fight without a weapon_has:Sword??goto|4|Fight with your sword~bgGoblin
+~goto|0|Turn around_goto|3|Fight without a weapon_has:Sword??goto|4|Fight with your sword~bgGoblin
